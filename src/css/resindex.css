@@ -1,0 +1,49 @@
+
+.myfoodsystembg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.rescontent {
+  width: 750px;
+  height: 530px;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  margin-top: -260px;
+  margin-left: -375px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  padding: 40px 40px 40px 40px;/*上右下左*/
+  box-sizing: border-box;
+  position: absolute;
+  color: white;
+}
+
+.rescontent::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  margin: -30px; /*消除内框边缘透明*/
+  background-image: url("../assets/myfoodsystembg.jpg");
+  background-attachment: fixed; /*位置固定*/
+}
+
+.rescontent>h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+  margin-top: 0px;
+}
+.res_form{
+  margin-top: -15px;
+  padding: 0 30px;
+}

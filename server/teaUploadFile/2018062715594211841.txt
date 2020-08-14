@@ -1,0 +1,7 @@
+ /* var getMsgcount;
+      getMsgcount=myModel.find({}).exec().then(function(presult){
+        return presult;
+      }).error(function(error){
+        return error;
+      })
+    console.log(getMsgcount);*/
